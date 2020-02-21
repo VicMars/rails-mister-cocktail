@@ -9,3 +9,11 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+
+Cocktail.create(name: "Pina Colada")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Blue Something")
+
+Dose.create(description: "1 tablespoon")
+Dose.create(description: "1 shot")
+Dose.create(description: "1 splash")
