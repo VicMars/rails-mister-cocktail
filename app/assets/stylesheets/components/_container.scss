@@ -1,0 +1,72 @@
+body {
+  background-color:white;
+}
+
+.container {
+  margin: 80px auto;
+}
+
+.container_page {
+  margin: 80px auto;
+  width:700px;
+}
+
+.title_page {
+  text-align:center;
+  text-decoration: #F8E465 underline wavy;
+  font-weight:bold;
+}
+
+.form_new_dose {
+  width: 700px;
+  margin: 80px auto;
+  padding:60px;
+  border: 20px solid #ABD3ED;
+}
+
+.form_new_dose h2 {
+  font-weight:bold;
+  text-align:center;
+  padding-bottom: 20px;
+}
+
+input.btn.btn-primary {
+  float:right;
+}
+
+.title_link a {
+  text-decoration:none;
+  color: black;
+  font-size: 0.6em;
+  font-weight:bold;
+}
+
+.title_link span {
+  padding: 0 10px;
+  font-weight:bold;
+  font-size: 0.6em;
+  color: #ABD3ED;
+}
+
+.recipe {
+  margin-top:80px;
+  padding:50px;
+}
+
+.recipe a {
+  float:right;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+.recipe a:hover {
+  color:#ABD3ED;
+}
+
+.recipe h3 {
+  font-weight:bold;
+  border-bottom: 3px solid #ABD3ED;
+  line-height: 2;
+  margin-bottom: 20px;
+}

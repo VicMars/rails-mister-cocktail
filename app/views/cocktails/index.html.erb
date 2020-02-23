@@ -1,14 +1,74 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <h1> Cocktails<br><span>forever</span></h1>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item btn btn-primary">
+        <%= link_to "Create a new cocktail", new_cocktail_path(@cocktail) %>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="container">
 
-<h1>Display cocktails</h1>
 
-<ul>
+
+<!-- <ul>
   <% @cocktails.each do |cocktail| %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
   <% end %>
-</ul>
+</ul> -->
 
-<p><%= link_to "Create a new cocktail", new_cocktail_path(@cocktail) %></p>
+  <div id="cards">
+
+  <div class="outer">
+    <div class="inner"></div>
+    <div class="card-category" style="background-image: url(/assets/Cocktail-01-Rendi_Studio.jpg)">
+      Daquiri
+    </div>
+  </div>
+
+  <div class="outer-two">
+    <div class="inner-two"></div>
+    <div class="card-category" style="background-image: url(/assets/Cocktail-02-Rendi_Studio.jpg)">
+      Martini
+    </div>
+  </div>
+
+  <div class="outer-two">
+    <div class="inner"></div>
+    <div class="card-category" style="background-image: url(/assets/Cocktail-03-Rendi_Studio.jpg)">
+      Babylon
+    </div>
+  </div>
+
+  <div class="outer">
+    <div class="inner-two"></div>
+    <div class="card-category" style="background-image: url(/assets/Cocktail-04-Rendi_Studio.jpg)">
+      Spritzer
+    </div>
+  </div>
+
+  <div class="outer">
+    <div class="inner"></div>
+    <div class="card-category" style="background-image: url(/assets/Cocktail-05-Rendi_Studio.jpg)">
+      Mimosa
+    </div>
+  </div>
+  </div>
+
+  <p style="font-size:1em; text-align:center">photos by Rendi Studio</p>
+
+  </div>
 
 
 </div>

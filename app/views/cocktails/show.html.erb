@@ -1,23 +1,31 @@
-<div class="container">
+<div class="container_page">
 
-  <h1><%= @cocktail.name %></h1>
+<h1 class="title_page"><%= @cocktail.name %></h1>
 
-<ul>
-  <% @cocktail.doses.each do |dose| %>
-   <li><%= dose.ingredient.name %>: <%=dose.description %><%= link_to "Delete", dose_path(dose), method: :delete %></li>
-   <% end %>
-</ul>
+<div class="recipe">
+  <h3>Recipe</h3>
+  <ul>
+    <% @cocktail.doses.each do |dose| %>
+      <li><%= dose.ingredient.name %>: <%=dose.description %><%= link_to "DELETE", dose_path(dose), method: :delete %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="form_new_dose">
 
 <h2>Add a new dose to your cocktail</h2>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :ingredient_id, collection: Ingredient.all %>
-  <%= f.input :description %>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :ingredient_id, collection: Ingredient.all %>
+    <%= f.input :description %>
 
-  <%= f.button :submit %>
-<% end %>
+    <%= f.button :submit , class: 'btn btn-primary', align: 'right' %>
+  <% end %>
 
+</div>
 
-<%= link_to "Back to the list of cocktails", cocktails_path(@cocktail) %>
+<h3 class='title_link'>
+  <span><<</span><%= link_to "Back to the list of cocktails", cocktails_path(@cocktail) %>
+</h3>
 
 </div>
