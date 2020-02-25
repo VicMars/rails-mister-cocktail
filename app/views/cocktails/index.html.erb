@@ -26,13 +26,13 @@
     <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
   <% end %>
 </ul> -->
-
   <div id="cards">
 
   <div class="outer">
     <div class="inner"></div>
     <div class="card-category" style="background-image: url(/assets/Cocktail-01-Rendi_Studio.jpg)">
       Daquiri
+      <%= cl_image_tag("Cocktail-01-Rendi_Studio_wnug2c", width: 400, height: 300, crop: :fill) %>
     </div>
   </div>
 
